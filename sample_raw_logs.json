@@ -1,0 +1,11 @@
+[
+    {"timestamp": "2026-08-12T08:10:00Z", "user": "alice", "ip_address": "203.0.113.10", "domain": "company.local", "status": "success", "user_agent": "Mozilla/5.0 Windows"},
+    {"timestamp": "2026-08-13T08:15:00Z", "user": "alice", "ip_address": "203.0.113.10", "domain": "company.local", "status": "success", "user_agent": "Mozilla/5.0 Windows"},
+    {"timestamp": "2026-08-14T02:20:00Z", "user": "alice", "ip_address": "198.51.100.77", "domain": "unknown-download.net", "status": "success", "user_agent": "Mozilla/5.0 Windows"},
+    {"timestamp": "2026-08-14T09:00:00Z", "user": "charlie", "ip_address": "198.51.100.77", "domain": "unknown-download.net", "status": "failure", "user_agent": "curl/8.0"},
+    {"timestamp": "2026-08-14T09:03:00Z", "user": "charlie", "ip_address": "198.51.100.77", "domain": "unknown-download.net", "status": "failure", "user_agent": "curl/8.0"},
+    {"timestamp": "2026-08-14T09:06:00Z", "user": "charlie", "ip_address": "198.51.100.77", "domain": "unknown-download.net", "status": "failure", "user_agent": "curl/8.0"},
+    {"timestamp": "2026-08-14T09:10:00Z", "user": "diana", "ip_address": "198.51.100.77", "domain": "company.local", "status": "failure", "user_agent": "PostmanRuntime"},
+    {"timestamp": "2026-08-14T09:12:00Z", "user": "erin", "ip_address": "198.51.100.77", "domain": "company.local", "status": "failure", "user_agent": "Android Mobile"},
+    {"timestamp": "2026-08-14T11:00:00Z", "user": "bob", "ip_address": "203.0.113.20", "domain": "company.local", "status": "success", "user_agent": "Mozilla/5.0 Windows"}
+]

@@ -1,0 +1,9 @@
+{
+    "suspicious_ips": ["198.51.100.77"],
+    "known_domains": ["company.local", "api.company.local"],
+    "geoip_data": {
+        "203.0.113.10": {"country": "India", "region": "Delhi"},
+        "203.0.113.20": {"country": "India", "region": "Maharashtra"},
+        "198.51.100.77": {"country": "Unknown", "region": "Unknown"}
+    }
+}

@@ -1,0 +1,488 @@
+{
+    "project": "AI Security Data Processing Engine",
+    "api_ingestion_status": "200: request accepted",
+    "summary": {
+        "total_logs": 9,
+        "high_severity_logs": 4,
+        "medium_severity_logs": 2,
+        "anomalies_detected": 4
+    },
+    "enriched_logs": [
+        {
+            "timestamp": "2026-08-12T08:10:00Z",
+            "user": "alice",
+            "ip_address": "203.0.113.10",
+            "domain": "company.local",
+            "status": "success",
+            "user_agent": "Mozilla/5.0 Windows",
+            "country": "India",
+            "region": "Delhi",
+            "device_type": "Desktop",
+            "suspicious_ip": false,
+            "unknown_domain": false,
+            "ioc": null,
+            "risk_score": 0,
+            "severity": "Low",
+            "risk_reasons": [],
+            "anomaly_flags": []
+        },
+        {
+            "timestamp": "2026-08-13T08:15:00Z",
+            "user": "alice",
+            "ip_address": "203.0.113.10",
+            "domain": "company.local",
+            "status": "success",
+            "user_agent": "Mozilla/5.0 Windows",
+            "country": "India",
+            "region": "Delhi",
+            "device_type": "Desktop",
+            "suspicious_ip": false,
+            "unknown_domain": false,
+            "ioc": null,
+            "risk_score": 0,
+            "severity": "Low",
+            "risk_reasons": [],
+            "anomaly_flags": []
+        },
+        {
+            "timestamp": "2026-08-14T02:20:00Z",
+            "user": "alice",
+            "ip_address": "198.51.100.77",
+            "domain": "unknown-download.net",
+            "status": "success",
+            "user_agent": "Mozilla/5.0 Windows",
+            "country": "Unknown",
+            "region": "Unknown",
+            "device_type": "Desktop",
+            "suspicious_ip": true,
+            "unknown_domain": true,
+            "ioc": "198.51.100.77",
+            "risk_score": 9,
+            "severity": "High",
+            "risk_reasons": [
+                "suspicious IP (+3)",
+                "unknown domain (+2)",
+                "repeated activity (+4)"
+            ],
+            "anomaly_flags": [
+                "unusual login attempt: uncommon login hour"
+            ]
+        },
+        {
+            "timestamp": "2026-08-14T09:00:00Z",
+            "user": "charlie",
+            "ip_address": "198.51.100.77",
+            "domain": "unknown-download.net",
+            "status": "failure",
+            "user_agent": "curl/8.0",
+            "country": "Unknown",
+            "region": "Unknown",
+            "device_type": "API Client",
+            "suspicious_ip": true,
+            "unknown_domain": true,
+            "ioc": "198.51.100.77",
+            "risk_score": 9,
+            "severity": "High",
+            "risk_reasons": [
+                "suspicious IP (+3)",
+                "unknown domain (+2)",
+                "repeated activity (+4)"
+            ],
+            "anomaly_flags": []
+        },
+        {
+            "timestamp": "2026-08-14T09:03:00Z",
+            "user": "charlie",
+            "ip_address": "198.51.100.77",
+            "domain": "unknown-download.net",
+            "status": "failure",
+            "user_agent": "curl/8.0",
+            "country": "Unknown",
+            "region": "Unknown",
+            "device_type": "API Client",
+            "suspicious_ip": true,
+            "unknown_domain": true,
+            "ioc": "198.51.100.77",
+            "risk_score": 9,
+            "severity": "High",
+            "risk_reasons": [
+                "suspicious IP (+3)",
+                "unknown domain (+2)",
+                "repeated activity (+4)"
+            ],
+            "anomaly_flags": []
+        },
+        {
+            "timestamp": "2026-08-14T09:06:00Z",
+            "user": "charlie",
+            "ip_address": "198.51.100.77",
+            "domain": "unknown-download.net",
+            "status": "failure",
+            "user_agent": "curl/8.0",
+            "country": "Unknown",
+            "region": "Unknown",
+            "device_type": "API Client",
+            "suspicious_ip": true,
+            "unknown_domain": true,
+            "ioc": "198.51.100.77",
+            "risk_score": 9,
+            "severity": "High",
+            "risk_reasons": [
+                "suspicious IP (+3)",
+                "unknown domain (+2)",
+                "repeated activity (+4)"
+            ],
+            "anomaly_flags": [
+                "repeated failed access: 3 failures in 10 minutes"
+            ]
+        },
+        {
+            "timestamp": "2026-08-14T09:10:00Z",
+            "user": "diana",
+            "ip_address": "198.51.100.77",
+            "domain": "company.local",
+            "status": "failure",
+            "user_agent": "PostmanRuntime",
+            "country": "Unknown",
+            "region": "Unknown",
+            "device_type": "API Client",
+            "suspicious_ip": true,
+            "unknown_domain": false,
+            "ioc": "198.51.100.77",
+            "risk_score": 3,
+            "severity": "Medium",
+            "risk_reasons": [
+                "suspicious IP (+3)"
+            ],
+            "anomaly_flags": [
+                "abnormal IP behavior: one IP used for multiple accounts"
+            ]
+        },
+        {
+            "timestamp": "2026-08-14T09:12:00Z",
+            "user": "erin",
+            "ip_address": "198.51.100.77",
+            "domain": "company.local",
+            "status": "failure",
+            "user_agent": "Android Mobile",
+            "country": "Unknown",
+            "region": "Unknown",
+            "device_type": "Mobile",
+            "suspicious_ip": true,
+            "unknown_domain": false,
+            "ioc": "198.51.100.77",
+            "risk_score": 3,
+            "severity": "Medium",
+            "risk_reasons": [
+                "suspicious IP (+3)"
+            ],
+            "anomaly_flags": [
+                "abnormal IP behavior: one IP used for multiple accounts"
+            ]
+        },
+        {
+            "timestamp": "2026-08-14T11:00:00Z",
+            "user": "bob",
+            "ip_address": "203.0.113.20",
+            "domain": "company.local",
+            "status": "success",
+            "user_agent": "Mozilla/5.0 Windows",
+            "country": "India",
+            "region": "Maharashtra",
+            "device_type": "Desktop",
+            "suspicious_ip": false,
+            "unknown_domain": false,
+            "ioc": null,
+            "risk_score": 0,
+            "severity": "Low",
+            "risk_reasons": [],
+            "anomaly_flags": []
+        }
+    ],
+    "top_10_threats": [
+        {
+            "timestamp": "2026-08-14T02:20:00Z",
+            "user": "alice",
+            "ip_address": "198.51.100.77",
+            "domain": "unknown-download.net",
+            "status": "success",
+            "user_agent": "Mozilla/5.0 Windows",
+            "country": "Unknown",
+            "region": "Unknown",
+            "device_type": "Desktop",
+            "suspicious_ip": true,
+            "unknown_domain": true,
+            "ioc": "198.51.100.77",
+            "risk_score": 9,
+            "severity": "High",
+            "risk_reasons": [
+                "suspicious IP (+3)",
+                "unknown domain (+2)",
+                "repeated activity (+4)"
+            ],
+            "anomaly_flags": [
+                "unusual login attempt: uncommon login hour"
+            ]
+        },
+        {
+            "timestamp": "2026-08-14T09:00:00Z",
+            "user": "charlie",
+            "ip_address": "198.51.100.77",
+            "domain": "unknown-download.net",
+            "status": "failure",
+            "user_agent": "curl/8.0",
+            "country": "Unknown",
+            "region": "Unknown",
+            "device_type": "API Client",
+            "suspicious_ip": true,
+            "unknown_domain": true,
+            "ioc": "198.51.100.77",
+            "risk_score": 9,
+            "severity": "High",
+            "risk_reasons": [
+                "suspicious IP (+3)",
+                "unknown domain (+2)",
+                "repeated activity (+4)"
+            ],
+            "anomaly_flags": []
+        },
+        {
+            "timestamp": "2026-08-14T09:03:00Z",
+            "user": "charlie",
+            "ip_address": "198.51.100.77",
+            "domain": "unknown-download.net",
+            "status": "failure",
+            "user_agent": "curl/8.0",
+            "country": "Unknown",
+            "region": "Unknown",
+            "device_type": "API Client",
+            "suspicious_ip": true,
+            "unknown_domain": true,
+            "ioc": "198.51.100.77",
+            "risk_score": 9,
+            "severity": "High",
+            "risk_reasons": [
+                "suspicious IP (+3)",
+                "unknown domain (+2)",
+                "repeated activity (+4)"
+            ],
+            "anomaly_flags": []
+        },
+        {
+            "timestamp": "2026-08-14T09:06:00Z",
+            "user": "charlie",
+            "ip_address": "198.51.100.77",
+            "domain": "unknown-download.net",
+            "status": "failure",
+            "user_agent": "curl/8.0",
+            "country": "Unknown",
+            "region": "Unknown",
+            "device_type": "API Client",
+            "suspicious_ip": true,
+            "unknown_domain": true,
+            "ioc": "198.51.100.77",
+            "risk_score": 9,
+            "severity": "High",
+            "risk_reasons": [
+                "suspicious IP (+3)",
+                "unknown domain (+2)",
+                "repeated activity (+4)"
+            ],
+            "anomaly_flags": [
+                "repeated failed access: 3 failures in 10 minutes"
+            ]
+        },
+        {
+            "timestamp": "2026-08-14T09:10:00Z",
+            "user": "diana",
+            "ip_address": "198.51.100.77",
+            "domain": "company.local",
+            "status": "failure",
+            "user_agent": "PostmanRuntime",
+            "country": "Unknown",
+            "region": "Unknown",
+            "device_type": "API Client",
+            "suspicious_ip": true,
+            "unknown_domain": false,
+            "ioc": "198.51.100.77",
+            "risk_score": 3,
+            "severity": "Medium",
+            "risk_reasons": [
+                "suspicious IP (+3)"
+            ],
+            "anomaly_flags": [
+                "abnormal IP behavior: one IP used for multiple accounts"
+            ]
+        },
+        {
+            "timestamp": "2026-08-14T09:12:00Z",
+            "user": "erin",
+            "ip_address": "198.51.100.77",
+            "domain": "company.local",
+            "status": "failure",
+            "user_agent": "Android Mobile",
+            "country": "Unknown",
+            "region": "Unknown",
+            "device_type": "Mobile",
+            "suspicious_ip": true,
+            "unknown_domain": false,
+            "ioc": "198.51.100.77",
+            "risk_score": 3,
+            "severity": "Medium",
+            "risk_reasons": [
+                "suspicious IP (+3)"
+            ],
+            "anomaly_flags": [
+                "abnormal IP behavior: one IP used for multiple accounts"
+            ]
+        },
+        {
+            "timestamp": "2026-08-12T08:10:00Z",
+            "user": "alice",
+            "ip_address": "203.0.113.10",
+            "domain": "company.local",
+            "status": "success",
+            "user_agent": "Mozilla/5.0 Windows",
+            "country": "India",
+            "region": "Delhi",
+            "device_type": "Desktop",
+            "suspicious_ip": false,
+            "unknown_domain": false,
+            "ioc": null,
+            "risk_score": 0,
+            "severity": "Low",
+            "risk_reasons": [],
+            "anomaly_flags": []
+        },
+        {
+            "timestamp": "2026-08-13T08:15:00Z",
+            "user": "alice",
+            "ip_address": "203.0.113.10",
+            "domain": "company.local",
+            "status": "success",
+            "user_agent": "Mozilla/5.0 Windows",
+            "country": "India",
+            "region": "Delhi",
+            "device_type": "Desktop",
+            "suspicious_ip": false,
+            "unknown_domain": false,
+            "ioc": null,
+            "risk_score": 0,
+            "severity": "Low",
+            "risk_reasons": [],
+            "anomaly_flags": []
+        },
+        {
+            "timestamp": "2026-08-14T11:00:00Z",
+            "user": "bob",
+            "ip_address": "203.0.113.20",
+            "domain": "company.local",
+            "status": "success",
+            "user_agent": "Mozilla/5.0 Windows",
+            "country": "India",
+            "region": "Maharashtra",
+            "device_type": "Desktop",
+            "suspicious_ip": false,
+            "unknown_domain": false,
+            "ioc": null,
+            "risk_score": 0,
+            "severity": "Low",
+            "risk_reasons": [],
+            "anomaly_flags": []
+        }
+    ],
+    "anomaly_alerts": [
+        {
+            "timestamp": "2026-08-14T02:20:00Z",
+            "user": "alice",
+            "ip_address": "198.51.100.77",
+            "domain": "unknown-download.net",
+            "status": "success",
+            "user_agent": "Mozilla/5.0 Windows",
+            "country": "Unknown",
+            "region": "Unknown",
+            "device_type": "Desktop",
+            "suspicious_ip": true,
+            "unknown_domain": true,
+            "ioc": "198.51.100.77",
+            "risk_score": 9,
+            "severity": "High",
+            "risk_reasons": [
+                "suspicious IP (+3)",
+                "unknown domain (+2)",
+                "repeated activity (+4)"
+            ],
+            "anomaly_flags": [
+                "unusual login attempt: uncommon login hour"
+            ]
+        },
+        {
+            "timestamp": "2026-08-14T09:06:00Z",
+            "user": "charlie",
+            "ip_address": "198.51.100.77",
+            "domain": "unknown-download.net",
+            "status": "failure",
+            "user_agent": "curl/8.0",
+            "country": "Unknown",
+            "region": "Unknown",
+            "device_type": "API Client",
+            "suspicious_ip": true,
+            "unknown_domain": true,
+            "ioc": "198.51.100.77",
+            "risk_score": 9,
+            "severity": "High",
+            "risk_reasons": [
+                "suspicious IP (+3)",
+                "unknown domain (+2)",
+                "repeated activity (+4)"
+            ],
+            "anomaly_flags": [
+                "repeated failed access: 3 failures in 10 minutes"
+            ]
+        },
+        {
+            "timestamp": "2026-08-14T09:10:00Z",
+            "user": "diana",
+            "ip_address": "198.51.100.77",
+            "domain": "company.local",
+            "status": "failure",
+            "user_agent": "PostmanRuntime",
+            "country": "Unknown",
+            "region": "Unknown",
+            "device_type": "API Client",
+            "suspicious_ip": true,
+            "unknown_domain": false,
+            "ioc": "198.51.100.77",
+            "risk_score": 3,
+            "severity": "Medium",
+            "risk_reasons": [
+                "suspicious IP (+3)"
+            ],
+            "anomaly_flags": [
+                "abnormal IP behavior: one IP used for multiple accounts"
+            ]
+        },
+        {
+            "timestamp": "2026-08-14T09:12:00Z",
+            "user": "erin",
+            "ip_address": "198.51.100.77",
+            "domain": "company.local",
+            "status": "failure",
+            "user_agent": "Android Mobile",
+            "country": "Unknown",
+            "region": "Unknown",
+            "device_type": "Mobile",
+            "suspicious_ip": true,
+            "unknown_domain": false,
+            "ioc": "198.51.100.77",
+            "risk_score": 3,
+            "severity": "Medium",
+            "risk_reasons": [
+                "suspicious IP (+3)"
+            ],
+            "anomaly_flags": [
+                "abnormal IP behavior: one IP used for multiple accounts"
+            ]
+        }
+    ]
+}

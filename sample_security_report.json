@@ -1,0 +1,31 @@
+{
+    "project": "AI Security Data Processing Engine",
+    "api_ingestion_status": "200: request accepted",
+    "summary": {
+        "total_logs": 9,
+        "high_severity_logs": 4,
+        "medium_severity_logs": 2,
+        "anomalies_detected": 4
+    },
+    "example_high_risk_event": {
+        "timestamp": "2026-08-14T09:06:00Z",
+        "user": "charlie",
+        "ip_address": "198.51.100.77",
+        "domain": "unknown-download.net",
+        "country": "Unknown",
+        "region": "Unknown",
+        "device_type": "API Client",
+        "ioc": "198.51.100.77",
+        "risk_score": 9,
+        "severity": "High",
+        "risk_reasons": [
+            "suspicious IP (+3)",
+            "unknown domain (+2)",
+            "repeated activity (+4)"
+        ],
+        "anomaly_flags": [
+            "repeated failed access: 3 failures in 10 minutes"
+        ]
+    },
+    "report_note": "Running main.py creates the complete security_report.json file."
+}
