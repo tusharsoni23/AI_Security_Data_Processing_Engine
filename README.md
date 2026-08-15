@@ -1,6 +1,6 @@
 # AI Security Data Processing Engine
 
-Week 2 mini project that combines threat-data ingestion, log enrichment, risk scoring, anomaly detection, API security concepts, and backend dashboard logic.
+A mini project that combines threat-data ingestion, log enrichment, risk scoring, anomaly detection, API security concepts, and backend dashboard logic.
 
 ## Features
 
