@@ -4,7 +4,7 @@ Run: python main.py
 Optional REST-style ingestion: set THREAT_API_URL to an authorized JSON API.
 """
 
-import hmact
+import hmac
 import json
 import os
 from collections import Counter, defaultdict, deque
